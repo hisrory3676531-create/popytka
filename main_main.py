@@ -2,16 +2,35 @@ import time
 import random
 from datetime import datetime
 import threading
-import vk_api
 import sys
+
 print("=== СТАРТ СКРИПТА MAIN_MAIN ===", flush=True)
 
 try:
     import vk_api
     print("Библиотека vk_api импортирована успешно", flush=True)
+    
+    from vk_api.longpoll import VkLongPoll, VkEventType
+    print("LongPoll импортирован успешно", flush=True)
 except Exception as e:
     print(f"ОШИБКА ИМПОРТА: {e}", flush=True)
-from vk_api.longpoll import VkLongPoll, VkEventType
+
+# Дальше идут ваши настройки (TOKEN, GROUP_ID и т.д.)
+TOKEN = 'vk1.a.BPZCacj7IsrqAR7SxKODed8fchYdmPhjUY1__zquhkpfWw6Nfp9ljEXFIVhkrsCNDA_2jqSbeR5qyLm_0UwW0470rHC73YWkCLiZh3Dx4_sMJk0UvYvbLOneQWuE-nvks5HCPaHG2TJ1Ayb8GiEQcnevHr69mupSdG80KMpFvnDckEOwvkZpEwJuocJCRiPi-Z4B2bmISQ0ll-MdIg1P8w'
+ALLOWED_USER_ID = 802229179
+
+# И весь основной код функции main() или запуска обернем в блок:
+if __name__ == '__main__':
+    try:
+        print("Попытка авторизации в VK...", flush=True)
+        vk_session = vk_api.VkApi(token=TOKEN)
+        vk = vk_session.get_api()
+        print("Авторизация успешна! Запуск прослушивания...", flush=True)
+        
+        # Здесь идет ваш основной цикл работы бота...
+        
+    except Exception as e:
+        print(f"КРИТИЧЕСКАЯ ОШИБКА В РАБОТЕ БОТА: {e}", flush=True)
 
 # НАСТРОЙКИ ДЛЯ ОСНОВНОЙ СТРАНИЦЫ
 TOKEN = 'vk1.a.BPZCacj7IsrqAR7SxKODed8fchYdmPhjUY1__zquhkpfWw6Nfp9ljEXFIVhkrsCNDA_2jqSbeR5qyLm_0UwW0470rHC73YWkCLiZh3Dx4_sMJk0UvYvbLOneQWuE-nvks5HCPaHG2TJ1Ayb8GiEQcnevHr69mupSdG80KMpFvnDckEOwvkZpEwJuocJCRiPi-Z4B2bmISQ0ll-MdIg1P8w'

@@ -6,7 +6,7 @@ import vk_api
 from vk_api.longpoll import VkLongPoll, VkEventType
 
 # НАСТРОЙКИ ДЛЯ ОСНОВНОЙ СТРАНИЦЫ
-TOKEN = 'vk1.a.MDZt-Fb_YIE8fRZcqCo5bWVgI_j1hin0mz4kONrBbuqdN4nIwnS0MwK-pIuyok-51lT1-ikffCnQYJQzliQbQbdEhe73mNX5q5CJzLmipspsmJi6Lpt1q5-ZkVPD3O0q3tFS9EjaQP9HCqRzE4iBpKVLplMQgWw_B3xq6IhCnABnHNtB8hNmDMEWL8OrUgAencazRoUCllV9sVVjtSdmiw'
+TOKEN = 'vk1.a.BPZCacj7IsrqAR7SxKODed8fchYdmPhjUY1__zquhkpfWw6Nfp9ljEXFIVhkrsCNDA_2jqSbeR5qyLm_0UwW0470rHC73YWkCLiZh3Dx4_sMJk0UvYvbLOneQWuE-nvks5HCPaHG2TJ1Ayb8GiEQcnevHr69mupSdG80KMpFvnDckEOwvkZpEwJuocJCRiPi-Z4B2bmISQ0ll-MdIg1P8w'
 ALLOWED_USER_ID = 802229179  # Ваш ID
 
 # Список из 6 групп, куда бот будет поочередно отправлять посты

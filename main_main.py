@@ -1,4 +1,5 @@
 import time
+import os
 import random
 from datetime import datetime
 import threading
@@ -16,7 +17,7 @@ except Exception as e:
     print(f"ОШИБКА ИМПОРТА: {e}", flush=True)
 
 # НАСТРОЙКИ
-TOKEN = 'vk1.a.BPZCacj7IsrqAR7SxKODed8fchYdmPhjUY1__zquhkpfWw6Nfp9ljEXFIVhkrsCNDA_2jqSbeR5qyLm_0UwW0470rHC73YWkCLiZh3Dx4_sMJk0UvYvbLOneQWuE-nvks5HCPaHG2TJ1Ayb8GiEQcnevHr69mupSdG80KMpFvnDckEOwvkZpEwJuocJCRiPi-Z4B2bmISQ0ll-MdIg1P8w'
+TOKEN = os.getenv('TOKEN')
 ALLOWED_USER_ID = 802229179  # Твой ID
 
 # Список ваших групп (ID должны быть с минусом)

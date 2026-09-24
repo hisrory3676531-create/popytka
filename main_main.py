@@ -17,7 +17,7 @@ except Exception as e:
     print(f"ОШИБКА ИМПОРТА: {e}", flush=True)
 
 # НАСТРОЙКИ
-TOKEN = os.getenv('TOKEN')
+TOKEN = 'vk1.a.Oa7qU9frZCB0t7zmQWa2BE4ufu4hg40cS6plGCnJwMzLdDSX2sf7RlD_o7k4nYi24679q8L1t6ivJAqkMf8OlRUm_GGbgZ-N0s9tDvvNtVFxbpFgv5mdR1d17oj3ZmsW-_-C2xRV8Y_qZa4p1rDpXBwzaPGuBSiwQnVBYSmdSew_rqMT5s14puZhNFA3qv2t4ciBAOO_dbFjNDBf6kvD1A'
 ALLOWED_USER_ID = 802229179  # Твой ID
 
 # Список ваших групп (ID должны быть с минусом)

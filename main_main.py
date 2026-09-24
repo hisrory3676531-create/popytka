@@ -32,10 +32,6 @@ if __name__ == '__main__':
     except Exception as e:
         print(f"КРИТИЧЕСКАЯ ОШИБКА В РАБОТЕ БОТА: {e}", flush=True)
 
-# НАСТРОЙКИ ДЛЯ ОСНОВНОЙ СТРАНИЦЫ
-TOKEN = 'vk1.a.BPZCacj7IsrqAR7SxKODed8fchYdmPhjUY1__zquhkpfWw6Nfp9ljEXFIVhkrsCNDA_2jqSbeR5qyLm_0UwW0470rHC73YWkCLiZh3Dx4_sMJk0UvYvbLOneQWuE-nvks5HCPaHG2TJ1Ayb8GiEQcnevHr69mupSdG80KMpFvnDckEOwvkZpEwJuocJCRiPi-Z4B2bmISQ0ll-MdIg1P8w'
-ALLOWED_USER_ID = 802229179  # Ваш ID
-
 # Список из 6 групп, куда бот будет поочередно отправлять посты
 TARGET_GROUPS = [
     -66681616,   # 1. Группа 1

@@ -3,6 +3,14 @@ import random
 from datetime import datetime
 import threading
 import vk_api
+import sys
+print("=== СТАРТ СКРИПТА MAIN_MAIN ===", flush=True)
+
+try:
+    import vk_api
+    print("Библиотека vk_api импортирована успешно", flush=True)
+except Exception as e:
+    print(f"ОШИБКА ИМПОРТА: {e}", flush=True)
 from vk_api.longpoll import VkLongPoll, VkEventType
 
 # НАСТРОЙКИ ДЛЯ ОСНОВНОЙ СТРАНИЦЫ
